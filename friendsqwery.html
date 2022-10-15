@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../html/style.css" />
+    <title>10 Best Friends</title>
+  </head>
+  <h1><center>10 TEMAN TERBAIK DI IKMI</h1></center>
+<h2><center>Nurul Hikmah : 41226047</h2></center>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<style>
+	td {
+		background: lightblue;
+	}
+	.tabelku {
+		width: 100%;
+		max-width: 360%;
+	}
+</style>
+
+<table class="tabelku">
+	<tr style="background-color: deeppink;">
+		<th><center><b>NIM</th></center></b>
+        <th><center><b>NAMA</th></center></b>
+        <th><center><b>ALAMAT</th></center></b>
+        <th><center><b>AKSI</th></center></b>
+    </tr>
+
+    <tr id="row__1">
+		<td><center>41226098</td></center>
+        <td><center class="nama_mhs">Siti Nikmat</td></center>
+        <td><center>Cirebon</td></center>
+        <td><center class="hapus" id="hapus__1">Hapus</td></center>
+    </tr>
+
+    <tr id="row__2">
+		<td><center>41226044</td></center>
+        <td><center class="nama_mhs">Wandi</td></center>
+        <td><center>Cirebon</td></center>
+        <td><center class="hapus" id="hapus__2">Hapus</td></center>
+    </tr>
+
+    <tr id="row__3">
+		<td><center>41226101</td></center>
+        <td><center class="nama_mhs">Windiyani</td></center>
+      <td><center>Cirebon</td></center>
+        <td><center class="hapus" id="hapus__3">Hapus</td></center>
+    </tr>
+
+    <tr id="row__4">
+		<td><center>41226084</td></center>
+        <td><center class="nama_mhs">Muhammad Ismail Marzuki</td></center>
+        <td><center>Cirebon</td></center>
+        <td><center class="hapus" id="hapus__4">Hapus</td></center>
+    </tr>
+
+    <tr id="row__5">
+		<td><center>41226053</td></center>
+        <td><center class="nama_mhs">Sri Hartati</td></center>
+       <td><center>Cirebon</td></center>
+        <td><center class="hapus" id="hapus__5">Hapus</td></center>
+    </tr>
+
+    <tr id="row__6">
+		<td><center>41226080</td></center>
+        <td><center class="nama_mhs">Mohamad Said</td></center>
+        <td><center>Cirebon</td></center>
+        <td><center class="hapus" id="hapus__6">Hapus</td></center>
+    </tr>
+
+    <tr id="row__7">
+		<td><center>41226193</td></center>
+        <td><center class="nama_mhs">Bayu Firman</td></center>
+        <td><center>Cirebon</td></center>
+        <td><center class="hapus" id="hapus__7">Hapus</td></center>
+    </tr>
+
+    <tr id="row__8">
+		<td><center>41226125</td></center>
+        <td><center class="nama_mhs">Rara Ayuningsih</td></center>
+        <td><center>Indramayu</td></center>
+        <td><center class="hapus" id="hapus__8">Hapus</td></center>
+    </tr>
+
+    <tr id="row__9">
+		<td><center>41226087</td></center>
+        <td><center class="nama_mhs">Nasyiit Rahmadi</td></center>
+        <td><center>Indramayu</td></center>
+        <td><center class="hapus" id="hapus__9">Hapus</td></center>
+    </tr>
+
+    <tr id="row__10">
+		<td><center>41226056</td></center>
+        <td><center class="nama_mhs">Kusnatul Apipah</td></center>
+        <td><center>Indramayu</td></center>
+        <td><center class="hapus" id="hapus__10">Hapus</td></center>
+    </tr>
+
+</table>
+
+<div class="tombol-back-friendsqwery">
+      <a onclick="alert('Kamu mau kembali?')" href="../index.html"
+        >Back to Home</a
+      >
+    </div>
+
+
+<script>
+  $(document).ready(function(){
+    // alert(0)
+    $('.nama_mhs').click(function(){
+      // alert(1)
+      let isi = $(this).text();
+      // alert(isi);
+
+      let isi2 = prompt('ubah dengan:', isi);
+      if(!isi2) return;
+      // alert(isi2)
+
+      $(this).text(isi2);
+
+
+    })
+  	
+
+
+    $('.hapus').click(function(){
+      // alert(1)
+      let yakin = confirm('Yakin mau menghapus?');
+      if(!Yakin) return;
+
+      let id = $(this).prop('id');
+      // alert(id);
+
+      let rid = id.split('__');
+      let baris_ke = rid[1];
+
+      alert(baris_ke);
+
+
+
+      // alert('Anda Yakin')
+
+
+    })
+
+})
+</script>
